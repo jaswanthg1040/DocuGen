@@ -113,18 +113,7 @@ Back it up from **Settings → Download a backup**, or copy the file. If you use
   supported formatting. Filenames are sanitised. Imported files are parsed, never executed (limit 5 MB).
 * The autosaved draft (one row in the same database) is removed when you save or discard it.
 
-## Troubleshooting
 
-| Problem | Fix |
-|---------|-----|
-| `'python' is not recognized` | Python is not installed or not on PATH. Reinstall and tick "Add python.exe to PATH", or use `py -m venv .venv`. |
-| `Start DocuGen.bat` closes immediately or says dependencies failed | Run it from a terminal (`cmd`) to read the message; usually Python is missing or there is no internet for the first install. |
-| `No module named streamlit` (or docx, reportlab) | The environment is not active or dependencies are missing. Activate `.venv` (prompt starts with `(.venv)`) and run `python -m pip install -r requirements.txt`. |
-| Wrong interpreter in VS Code | Ctrl+Shift+P → *Python: Select Interpreter* → `.venv\Scripts\python.exe`. |
-| `File does not exist: app.py` | Wrong folder. `cd` into the folder that contains `app.py`. |
-| `Port 8501 is already in use` | Close the other Streamlit app or run `python -m streamlit run app.py --server.port 8502`. |
-| "DocuGen cannot open its database" | The `data` folder is read-only or locked. Move DocuGen out of protected folders, or set `DOCUGEN_DB_PATH` in `.env` to a writable path. |
-| `SyntaxError` / `IndentationError` | A file was edited or pasted incorrectly (e.g. Markdown code fences pasted into a `.py` file). Re-extract the ZIP; `python -m pytest -q` names the broken file. |
 
 ## Known limitations
 
