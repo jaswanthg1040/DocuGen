@@ -1,4 +1,4 @@
-# DocuGen 2.0 — AI Document Studio
+# DocuGen 2 — AI Document Studio
 
 A local web app for creating, editing, previewing, saving, importing and exporting documents.
 Built with Python, Streamlit, SQLite, python-docx and ReportLab.
@@ -7,7 +7,7 @@ Built with Python, Streamlit, SQLite, python-docx and ReportLab.
 * Documents are stored in a local SQLite file and survive restarts.
 * AI-assisted writing is **not implemented** (see "Known limitations").
 
-## What's new in 2.0
+## What's there in Here
 
 | Area | New |
 |------|-----|
