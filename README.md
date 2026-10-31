@@ -1,4 +1,4 @@
-# DocuGen  — AI Document Studio
+# DocuGen  —  Document Studio
 
 A local web app for creating, editing, previewing, saving, importing and exporting documents.
 Built with Python, Streamlit, SQLite, python-docx and ReportLab.
@@ -20,26 +20,6 @@ Built with Python, Streamlit, SQLite, python-docx and ReportLab.
 | PDF | Bundled **DejaVu Sans** font, so Western European, Greek and Cyrillic text work on every PC; bold headings |
 | Setup | **`Start DocuGen.bat`** one-click launcher for Windows; existing 1.x databases are upgraded automatically |
 
-## Quick start on Windows 11
-
-**Easiest:** unzip the folder and double-click **`Start DocuGen.bat`**. The first run creates a
-virtual environment and installs the dependencies (internet required), then opens the app in your browser.
-(Python 3.10+ must be installed first: https://www.python.org/downloads/ — tick **"Add python.exe to PATH"**.)
-
-**Manual setup (PowerShell, inside the DocuGen folder):**
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python -m streamlit run app.py
-```
-
-If PowerShell refuses to activate the environment, run once:
-`Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`.
-The app opens at http://localhost:8501. Stop it with `Ctrl+C` (or close the launcher window).
-Next time you only need to activate the environment and run the last command.
 
 ## Using DocuGen
 
@@ -99,11 +79,7 @@ DocuGen/
 └── .streamlit/config.toml
 ```
 
-## Where is my data?
 
-`data\docugen.db` inside the project folder (override with `DOCUGEN_DB_PATH` in a `.env` file).
-Back it up from **Settings → Download a backup**, or copy the file. If you used DocuGen 1.x, copy your old
-`data\docugen.db` into this version's `data` folder: it is upgraded automatically on first start.
 
 ## Security and privacy
 
