@@ -107,3 +107,8 @@ DocuGen/
 * Dark mode is custom CSS over Streamlit; future Streamlit versions may rename internal elements.
 * `Start DocuGen.bat` was written for Windows but could not be executed in the Linux build environment; the
   manual PowerShell steps above are the tested path.
+
+## Contribute
+* This project is open to contributions 
+* Fork and send a PR 
+* Happy Coding
